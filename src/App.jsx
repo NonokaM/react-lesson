@@ -2,16 +2,12 @@ import { useState } from "react";
 import { ColoredMessage } from "./components/ColoredMessage";
 
 export const App = () => {
+    console.log("レンダリング");
 
     const [num, setNum] = useState(0);
 
     const onClickButton = () => {
         setNum((prev) => prev + 1);
-    };
-
-    const contentPinkStyle = {
-        color: "pink",
-        fontSize: "20px"
     };
 
     return (
